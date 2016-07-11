@@ -3,5 +3,7 @@
 ## Notes: Hello Backpack!
 ## Version: 0.1.0
 
+## imports and embeds
+libs.xml
+
 backpack.lua
-## backpack.xml
