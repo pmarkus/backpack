@@ -1,0 +1,7 @@
+## Interface: 60200
+## Title: Backpack
+## Notes: Hello Backpack!
+## Version: 0.1.0
+
+backpack.lua
+backpack.xml
