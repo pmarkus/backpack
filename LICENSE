@@ -1,3 +1,14 @@
+The files in this project is covered by the below viewable GPLv3,
+but there are some exceptions among the libraries used:
+
+Any Ace3 library is covered by the AceBSD license, found in libs/ACE_LICENSE.
+LibStub is public domain.
+CallbackHandler is not distributed with any license.
+
+
+
+--------------------------------------------------------------------------
+
                     GNU GENERAL PUBLIC LICENSE
                        Version 3, 29 June 2007
 

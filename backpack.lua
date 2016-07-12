@@ -1,6 +1,7 @@
 
 -- Create addon with Ace and desired embeds
-Backpack = LibStub("AceAddon-3.0"):NewAddon("Backpack", "AceConsole-3.0", "AceEvent-3.0")
+Backpack = LibStub("AceAddon-3.0"):NewAddon("Backpack", "AceConsole-3.0",
+    "AceEvent-3.0")
 
 function Backpack:OnInitialize()
     -- Register bag update events
@@ -12,6 +13,15 @@ function Backpack:OnInitialize()
     -- Set up tables for the standard bags
     Backpack.BlizzardBags = {}
     Backpack.BagsHidden = false
+
+end
+
+function Backpack:OnEnable()
+    -- The following should be refactored into some kind of factory/pool system
+
+    -- Grab a reference to AceGUI
+    local AceGUI = LibStub("AceGUI-3.0")
+    -- Create bag frames
     local bags = Backpack.BlizzardBags
     for x = 0, NUM_BAG_SLOTS do
         -- create a dummy bag frame to act as host for the item slot frames,
@@ -66,10 +76,6 @@ function Backpack:OnInitialize()
             f:Show()
         end
     end
-end
-
-function Backpack:OnEnable()
-    -- Called when the addon is enabled
 end
 
 function Backpack:OnDisable()
